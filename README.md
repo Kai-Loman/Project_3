@@ -28,10 +28,14 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;">
-  <iframe src="https://www.loom.com/embed/0d5434e02e954cddb6fdfa1228a0f347?sid=51764000-88e9-447a-a9cc-e4547239ec57" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  </iframe>
-</div>
+<div>
+    <a href="https://www.loom.com/share/0d5434e02e954cddb6fdfa1228a0f347">
+      <p>Inbox (266) - malom3@morgan.edu - Morgan State University Mail - 11 October 2024 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/0d5434e02e954cddb6fdfa1228a0f347">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/0d5434e02e954cddb6fdfa1228a0f347-bc9a81e0a0793cd7-full-play.gif">
+    </a>
+  </div>
 
 ## Notes
 
