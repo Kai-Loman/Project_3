@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginEnd="25dp">
 
+    <!-- In the Image view, height and width set so image doesn't collapse itself -->
     <ImageView
         android:id="@+id/movie_image"
         android:layout_width="150dp"
@@ -14,6 +15,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+
+
+    <!-- Both Text views has a set width so that the text don't go out of the screen -->
     <TextView
         android:id="@+id/movie_description"
         android:layout_width="170dp"
