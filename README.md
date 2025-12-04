@@ -4,10 +4,10 @@ Team: tm8 p1-stress forecasting
 Course: COSC 490 / Capstone
 Semester: Fall 2025
 
-
-
-
-
+  
+  
+  
+  
 
 ## 1. ABSTRACT
 
