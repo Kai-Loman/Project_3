@@ -25,11 +25,11 @@ The goal of the project is to allow users to monitor predicted stress levels in 
 ## 3. PROJECT STRUCTURE
 Stress-Forecasting/
 │
-├── backend/
-│   ├── main.py
-│   ├── model.pkl
-│   ├── requirements.txt
-│
+├── backend/  
+│   ├── main.py  
+│   ├── model.pkl  
+│   ├── requirements.txt  
+│  
 ├── frontend/
 │   ├── app.py
 │   ├── assets/
