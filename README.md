@@ -4,14 +4,18 @@ Team: tm8 p1-stress forecasting
 Course: COSC 490 / Capstone
 Semester: Fall 2025
 
-##
+
+
+
+
+
 ## 1. ABSTRACT
 
 This project implements a Stress Forecasting System that predicts user stress levels based on physiological sensor data. The system is built using a FastAPI backend for machine-learning inference and a Streamlit frontend that provides a modern Fitbit-style interface. The application is lightweight, modular, and easy for peers to clone and run locally.
 
 The goal of the project is to allow users to monitor predicted stress levels in real time while also giving developers a clean API and UI framework to extend with additional features.
 
-##
+
 ## 2. SYSTEM REQUIREMENTS
 •	Python 3.10 or higher
 •	FastAPI
