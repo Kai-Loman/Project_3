@@ -1,60 +1,105 @@
-# Android Project 3 - Movie List
+# README — Stress Forecasting System
 
-Submitted by: Malakai Loman
+Team: tm8 p1-stress forecasting
+Course: COSC 490 / Capstone
+Semester: Fall 2025
 
-Movie List is a movie browsing app that allows users to browse movies currently playing in theaters.
 
-Time spent: 36 hours spent in total
+## 1. ABSTRACT
 
-## Required Features
+This project implements a Stress Forecasting System that predicts user stress levels based on physiological sensor data. The system is built using a FastAPI backend for machine-learning inference and a Streamlit frontend that provides a modern Fitbit-style interface. The application is lightweight, modular, and easy for peers to clone and run locally.
 
-The following **required** functionality is completed:
+The goal of the project is to allow users to monitor predicted stress levels in real time while also giving developers a clean API and UI framework to extend with additional features.
 
-- [x] **Make a request to [The Movie Database API's `now_playing`](https://developers.themoviedb.org/3/movies/get-now-playing) endpoint to get a list of current movies**
-- [x] **Parse through JSON data and implement a RecyclerView to display all movies**
-- [x] **Use Glide to load and display movie poster images**
 
-The following **optional** features are implemented:
+## 2. SYSTEM REQUIREMENTS
+•	Python 3.10 or higher
+•	FastAPI
+•	Uvicorn
+•	Streamlit
+•	NumPy
+•	Pandas
+•	Scikit-learn
+•	pip package manager
 
-- [ ] Improve and customize the user interface through styling and coloring
-- [ ] Implement orientation responsivity
-  - App should neatly arrange data in both landscape and portrait mode
-- [ ] Implement Glide to display placeholder graphics during loading
-  - Note: this feature is difficult to capture in a GIF without throttling internet speeds.  Instead, include an additional screencap of your Glide code implementing the feature.  (<10 lines of code)
+## 3. PROJECT STRUCTURE
+Stress-Forecasting/
+│
+├── backend/
+│   ├── main.py
+│   ├── model.pkl
+│   ├── requirements.txt
+│
+├── frontend/
+│   ├── app.py
+│   ├── assets/
+│   ├── src/
+│   ├── requirements.txt
+│
+└── README.md
 
-The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+## 4. BACKEND SETUP (FASTAPI)
+1.	Open terminal
+2.	Navigate to backend folder:
+cd backend
 
-## Video Walkthrough
+2.	Install required packages:
+pip install -r requirements.txt
 
-<div>
-    <a href="https://www.loom.com/share/0d5434e02e954cddb6fdfa1228a0f347">
-      <p>Inbox (266) - malom3@morgan.edu - Morgan State University Mail - 11 October 2024 - Watch Video</p>
-    </a>
-    <a href="https://www.loom.com/share/0d5434e02e954cddb6fdfa1228a0f347">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/0d5434e02e954cddb6fdfa1228a0f347-bc9a81e0a0793cd7-full-play.gif">
-    </a>
-  </div>
+3.	Start the FastAPI server:
+uvicorn main:app --reload
 
-## Notes
 
-It took me a second to figure out the gson with the array api (in the lab, it uses gson with the list object so I was trying to create an list object from the api)
+Backend runs at:
+http://127.0.0.1:8000
 
-the fragment also isn't fully understood but I guess it's fine for now
+Endpoints:
+•	GET / → health check
+•	POST /predict → returns stress prediction for input data
 
-## License
+## 5. FRONTEND SETUP (STREAMLIT)
+1.	Open a new terminal
+Navigate to frontend folder:
+cd frontend
 
-    Copyright [yyyy] [name of copyright owner]
+2.	Install frontend packages:
+pip install -r requirements.txt
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+3.	Run the UI:
+streamlit run app.py
 
-        http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+Frontend runs at:
+http://localhost:8501
+
+## 6. SYSTEM ARCHITECTURE
+
+Streamlit (UI)
+→ displays dashboard, graphs, user interface
+
+FastAPI (Backend)
+→ receives sensor input, loads ML model, returns prediction
+
+Model
+→ built with scikit-learn, trained on labeled stress datasets
+
+Flow:
+Streamlit → FastAPI → Model → JSON Response → Frontend Visualization
+
+
+## 7. RUNNING INSTRUCTIONS
+1.	Start backend first
+2.	Make sure it is reachable at 127.0.0.1:8000
+3.	Start frontend next
+4.	The frontend automatically sends requests to FastAPI
+5.	Stress prediction appears in the UI
+
+## 8. REFERENCES
+
+[1] T. Tiangolo, “FastAPI Documentation,” https://fastapi.tiangolo.com.
+[2] Streamlit Inc., “Streamlit Documentation,” https://docs.streamlit.io.
+[3] Scikit-learn Developers, “Scikit-learn Machine Learning in Python,” https://scikit-learn.org.
+[4] Uvicorn Authors, “Uvicorn ASGI Server,” https://www.uvicorn.org.
+
+
