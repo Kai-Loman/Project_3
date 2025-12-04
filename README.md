@@ -97,9 +97,7 @@ Streamlit → FastAPI → Model → JSON Response → Frontend Visualization
 
 ## 8. REFERENCES
 
-[1] T. Tiangolo, “FastAPI Documentation,” https://fastapi.tiangolo.com.
-[2] Streamlit Inc., “Streamlit Documentation,” https://docs.streamlit.io.
-[3] Scikit-learn Developers, “Scikit-learn Machine Learning in Python,” https://scikit-learn.org.
+[1] T. Tiangolo, “FastAPI Documentation,” https://fastapi.tiangolo.com.  
+[2] Streamlit Inc., “Streamlit Documentation,” https://docs.streamlit.io.  
+[3] Scikit-learn Developers, “Scikit-learn Machine Learning in Python,” https://scikit-learn.org.  
 [4] Uvicorn Authors, “Uvicorn ASGI Server,” https://www.uvicorn.org.
-
-
