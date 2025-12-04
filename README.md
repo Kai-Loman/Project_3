@@ -13,14 +13,14 @@ The goal of the project is to allow users to monitor predicted stress levels in 
 
 
 ## 2. SYSTEM REQUIREMENTS
-•	Python 3.10 or higher
-•	FastAPI
-•	Uvicorn
-•	Streamlit
-•	NumPy
-•	Pandas
-•	Scikit-learn
-•	pip package manager
+•	Python 3.10 or higher  
+•	FastAPI  
+•	Uvicorn  
+•	Streamlit  
+•	NumPy  
+•	Pandas  
+•	Scikit-learn  
+•	pip package manager  
 
 ## 3. PROJECT STRUCTURE
 Stress-Forecasting/
@@ -30,13 +30,13 @@ Stress-Forecasting/
 │   ├── model.pkl  
 │   ├── requirements.txt  
 │  
-├── frontend/
-│   ├── app.py
-│   ├── assets/
-│   ├── src/
-│   ├── requirements.txt
-│
-└── README.md
+├── frontend/  
+│   ├── app.py  
+│   ├── assets/  
+│   ├── src/  
+│   ├── requirements.txt  
+│  
+└── README.md  
 
 
 ## 4. BACKEND SETUP (FASTAPI)
